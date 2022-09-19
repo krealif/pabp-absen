@@ -142,13 +142,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void processDatePickerResult(Calendar date) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         inputDate.setText(sdf.format(date.getTime()));
         inputDate.setError(null);
     }
 
     public void processTimePickerResult(Calendar time) {
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm", Locale.ENGLISH);
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         inputTime.setText(sdf.format(time.getTime()));
         inputTime.setError(null);
     }
